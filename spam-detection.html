@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women Safety Management System - Spam Call Action</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="index.html">1. User Login</a>
+          <a href="navigation.html">2. Navigation Panel</a>
+          <a class="active" href="spam-detection.html">3. Spam Call Fine</a>
+          <a href="emergency.html">4. Emergency Numbers</a>
+          <a href="complaint.html">5. Police Complaint</a>
+        </nav>
+
+        <section class="card hero">
+          <h1>Spam Call Detection & Penalty UI</h1>
+          <p>
+            If a suspicious call is verified as spam, approve a fine and get payment confirmation.
+          </p>
+          <span class="tag">Page 3 - Anti-Spam Fine Module</span>
+        </section>
+
+        <section class="card" id="loggedInUserInfo"></section>
+
+        <section class="card">
+          <h2>Approve Fine for Confirmed Spam Call</h2>
+          <form id="spamFineForm" class="grid grid-2">
+            <div>
+              <label for="callerNumber">Criminal / Spam Caller Number</label>
+              <input id="callerNumber" type="tel" placeholder="+91 9XXXXXXXXX" />
+            </div>
+            <div>
+              <label for="fineAmount">Fine Amount (INR)</label>
+              <input id="fineAmount" type="number" placeholder="500" />
+            </div>
+            <div>
+              <label for="spamReason">Reason for Spam Approval</label>
+              <select id="spamReason">
+                <option value="">Select reason</option>
+                <option value="Threatening language">Threatening language</option>
+                <option value="Repeated harassment calls">Repeated harassment calls</option>
+                <option value="Obscene/abusive content">Obscene/abusive content</option>
+                <option value="Blackmail or extortion attempt">Blackmail or extortion attempt</option>
+              </select>
+            </div>
+            <div>
+              <label for="approvalOfficer">Approval Officer</label>
+              <input id="approvalOfficer" type="text" placeholder="Safety Moderator Name" />
+            </div>
+            <div style="grid-column: 1 / -1">
+              <button type="submit">Approve as Spam and Send Fine</button>
+            </div>
+          </form>
+          <div id="spamOutput" class="status warning">No action yet. Submit to process spam fine.</div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

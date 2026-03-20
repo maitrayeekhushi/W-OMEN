@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women Safety Management System - Navigation Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="index.html">1. User Login</a>
+          <a class="active" href="navigation.html">2. Navigation Panel</a>
+          <a href="spam-detection.html">3. Spam Call Fine</a>
+          <a href="emergency.html">4. Emergency Numbers</a>
+          <a href="complaint.html">5. Police Complaint</a>
+        </nav>
+
+        <section class="card hero">
+          <h1>Navigation Panel</h1>
+          <p>Access female cab drivers and your current registered profile details.</p>
+          <span class="tag">Page 2 - Female Cab Access</span>
+        </section>
+
+        <section class="card" id="loggedInUserInfo"></section>
+
+        <section class="card">
+          <h2>Available Female Cab Drivers</h2>
+          <p class="small">Use this directory for safer travel assistance and quick calls.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Driver Name</th>
+                <th>City</th>
+                <th>Cab ID</th>
+                <th>Contact</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="cabDriverRows"></tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

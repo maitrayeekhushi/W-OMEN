@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women Safety Management System - Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container">
+        <nav class="top-nav">
+          <a class="active" href="index.html">1. User Login</a>
+          <a href="navigation.html">2. Navigation Panel</a>
+          <a href="spam-detection.html">3. Spam Call Fine</a>
+          <a href="emergency.html">4. Emergency Numbers</a>
+          <a href="complaint.html">5. Police Complaint</a>
+        </nav>
+
+        <section class="card hero">
+          <h1>Women Safety Management System</h1>
+          <p>
+            Register your profile with contact and current location to access all safety features.
+          </p>
+          <span class="tag">Page 1 - User Login</span>
+        </section>
+
+        <section class="card">
+          <h2>User Login / Registration</h2>
+          <form id="loginForm" class="grid grid-2">
+            <div>
+              <label for="userName">Full Name</label>
+              <input id="userName" type="text" placeholder="Enter your full name" />
+            </div>
+            <div>
+              <label for="userContact">Contact Number</label>
+              <input id="userContact" type="tel" placeholder="+91 98XXXXXXXX" />
+            </div>
+            <div style="grid-column: 1 / -1">
+              <label for="userLocation">Current Location</label>
+              <input id="userLocation" type="text" placeholder="Area, City, State" />
+            </div>
+            <div style="grid-column: 1 / -1">
+              <button type="submit">Save and Continue</button>
+              <a class="btn-link btn-outline" href="navigation.html">Go to Navigation Panel</a>
+            </div>
+          </form>
+          <div id="loginStatus" class="status warning">Please enter details to activate system modules.</div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

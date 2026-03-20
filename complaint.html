@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women Safety Management System - Direct Complaint</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="index.html">1. User Login</a>
+          <a href="navigation.html">2. Navigation Panel</a>
+          <a href="spam-detection.html">3. Spam Call Fine</a>
+          <a href="emergency.html">4. Emergency Numbers</a>
+          <a class="active" href="complaint.html">5. Police Complaint</a>
+        </nav>
+
+        <section class="card hero">
+          <h1>Direct Complaint Portal</h1>
+          <p>
+            Submit direct complaints to police and authorities for eve teasing and sexual harassment.
+          </p>
+          <span class="tag">Page 5 - Complaint to Police and Corp</span>
+        </section>
+
+        <section class="card" id="loggedInUserInfo"></section>
+
+        <section class="card">
+          <h2>Complaint Registration Form</h2>
+          <form id="complaintForm" class="grid grid-2">
+            <div>
+              <label for="policeStation">Police Station / Control Unit</label>
+              <input id="policeStation" type="text" placeholder="Nearest station name" />
+            </div>
+            <div>
+              <label for="issueType">Issue Type</label>
+              <select id="issueType">
+                <option value="">Select issue</option>
+                <option value="Eve Teasing">Eve Teasing</option>
+                <option value="Sexual Harassment">Sexual Harassment</option>
+                <option value="Stalking">Stalking</option>
+                <option value="Public Misconduct">Public Misconduct</option>
+              </select>
+            </div>
+            <div style="grid-column: 1 / -1">
+              <label for="incidentLocation">Incident Location</label>
+              <input id="incidentLocation" type="text" placeholder="Street/Area/City details" />
+            </div>
+            <div style="grid-column: 1 / -1">
+              <label for="complaintDetails">Complaint Description</label>
+              <textarea
+                id="complaintDetails"
+                rows="5"
+                placeholder="Explain what happened and include any suspect details."
+              ></textarea>
+            </div>
+            <div style="grid-column: 1 / -1">
+              <button type="submit">Submit Complaint</button>
+            </div>
+          </form>
+          <div id="complaintOutput" class="status warning">
+            No complaint submitted yet. Your case reference will appear here.
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
